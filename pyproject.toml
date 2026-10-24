@@ -1,0 +1,26 @@
+[project]
+name = "fws-section-01-langchain-foundations"
+version = "1.0.0"
+description = "Future with Shivank — AI Harness · Section 1: prompt templates, chat models, chains, local models with Ollama, LangSmith tracing"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.4",
+    "langchain-core>=1.4",
+    "langchain-openai>=1.7",
+    "langchain-ollama>=1.0",
+    "python-dotenv>=1.1",
+]
+
+[dependency-groups]
+# Code formatters used in the course: `uv run black .` and `uv run isort .`
+dev = [
+    "black>=25.1",
+    "isort>=6.0",
+]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
